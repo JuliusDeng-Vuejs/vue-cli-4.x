@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img id="scream" src="./1.jpg" alt="The Scream" width="220" height="277"><p>Canvas:</p>
+		<canvas id="myCanvas" width="500" height="500" style="border:1px solid #c3c3c3;">
+		您的浏览器不支持 HTML5 canvas 标签。
+		</canvas>
+		
+		<script>
+		
+		var c = document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		// ctx.fillStyle="#0069D9";
+		// ctx.fillRect(10,10,150,55);
+		// 画线
+		// ctx.moveTo(5,5)
+		// ctx.lineTo(200,100)
+		// ctx.stroke()
+		// 画圆
+		// ctx.beginPath()
+		// ctx.arc(95,50,40,0,2*Math.PI)
+		// ctx.stroke()
+		// 文本
+		// ctx.font = "30px Arial"
+		// ctx.strokeText("我爱你啊",11,55)
+		// 图像
+		var img = document.getElementById('scream')
+		// ctx.drawImage(img, 22,22)
+		img.onload = function () {
+			ctx.drawImage(img,22,22)
+		}
+		
+		
+		
+		</script>
+	</body>
+</html>
